@@ -1,0 +1,42 @@
+ body{
+
+    direction: rtl;
+    font-family: Abasan;
+    src: url('Font/Abasan_MRT.ttf')
+    
+ }
+@font-face {
+    font-family:Abasan ;
+    src: url('Font/Abasan_MRT.ttf');
+}
+ #Divbanner{
+
+    background-color: rgb(0, 255, 42);
+    text-align: center;
+
+ }
+
+ <!-- Modal کتاب اول -->
+<div class="modal fade" id="book1Modal" tabindex="-1" aria-labelledby="book1Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="book1Label">کتاب اول</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="بستن"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img src="Imeges/n-1.jpg" alt="کتاب ۱" style="max-width: 100%; height: auto; margin-bottom: 20px;">
+        <p>این کتاب درباره سفرهای ذهنی و کشف دنیای درون است. مناسب برای علاقه‌مندان به فلسفه و روان‌شناسی. نویسنده با نگاهی عمیق به احساسات انسانی، خواننده را به سفری درونی دعوت می‌کند.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-md-4">
+  <div class="card" data-bs-toggle="modal" data-bs-target="#book1Modal" style="cursor: pointer;">
+    <img src="Imeges/n-1.jpg" class="card-img-top" alt="کتاب ۱">
+    <div class="card-body">
+      <h5 class="card-title">کتاب اول</h5>
+      <p class="card-text">این کتاب درباره سفرهای ذهنی و کشف دنیای درون است.</p>
+    </div>
+  </div>
+</div>
