@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>سایت علاقه‌مندی‌های من</title>
+  <link rel="stylesheet" href="cssstyle/css/bootstrap.min.css">
+  <link rel="stylesheet" href="cssstyle/Mycss.css">
+  <style>
+    body {
+      font-family: 'Abasan', sans-serif;
+      background: linear-gradient(to right, #e0f7fa, #fff3e0);
+    }
+
+    #Divbanner {
+      background-color: #ff9800;
+      padding: 20px;
+      text-align: center;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    #Divbanner img {
+      width: 50px;
+      height: 50px;
+    }
+
+    .section-title {
+      margin-top: 40px;
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: #3e2723;
+    }
+
+    .card {
+      margin-bottom: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    footer {
+      background-color: #263238;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- هدر با لوگو -->
+  <div id="Divbanner">
+    <img src="Imeges/logo.png" alt="لوگو">
+    <h1>علاقه‌مندی‌های من</h1>
+  </div>
+
+  <!-- منو -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">خانه</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#books">کتاب‌ها</a></li>
+          <li class="nav-item"><a class="nav-link" href="#music">موسیقی‌ها</a></li>
+          <li class="nav-item"><a class="nav-link" href="#videos">فیلم‌ها</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">درباره ما</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <!-- کتاب‌ها -->
+    <div id="books" class="section-title">📚 کتاب‌ها</div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="Imeges/n-1.jpg" class="card-img-top" alt="کتاب ۱">
+          <div class="card-body">
+            <h5 class="card-title">کتاب اول</h5>
+            <p class="card-text">این کتاب درباره سفرهای ذهنی و کشف دنیای درون است. مناسب برای علاقه‌مندان به فلسفه و روان‌شناسی.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="Imeges/n-2.jpg" class="card-img-top" alt="کتاب ۲">
+          <div class="card-body">
+            <h5 class="card-title">کتاب دوم</h5>
+            <p class="card-text">رمان عاشقانه‌ای که در دل تاریخ روایت می‌شود. پر از احساسات، خاطرات و تصمیم‌های دشوار.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="Imeges/n-3.jpg" class="card-img-top" alt="کتاب ۳">
+          <div class="card-body">
+            <h5 class="card-title">کتاب سوم</h5>
+            <p class="card-text">راهنمایی برای موفقیت شخصی و حرفه‌ای با تمرکز بر عادت‌های روزانه و تفکر مثبت.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- موسیقی‌ها -->
+    <div id="music" class="section-title">🎵 موسیقی‌ها</div>
+    <div class="row">
+      <div class="col-md-6"><audio controls><source src="Audios/n-1.mp3" type="audio/mp3"></audio></div>
+      <div class="col-md-6"><audio controls><source src="Audios/n-2.mp3" type="audio/mp3"></audio></div>
+    </div>
+
+    <!-- فیلم‌ها -->
+    <div id="videos" class="section-title">🎬 فیلم‌ها</div>
+    <div class="row">
+      <div class="col-md-6"><video controls width="100%"><source src="Vidios/n-1.mp4" type="video/mp4"></video></div>
+      <div class="col-md-6"><video controls width="100%"><source src="Vidios/n-2.mp4" type="video/mp4"></video></div>
+    </div>
+
+    <!-- درباره ما -->
+    <div id="about" class="section-title">🏢 شرکت سازنده</div>
+    <p>این سایت برای نمایش علاقه‌مندی‌های من طراحی شده است. امیدوارم از دیدن و شنیدن آن‌ها لذت ببرید!</p>
+  </div>
+
+  <!-- فوتر -->
+  <footer>
+    <div class="container">
+      <p>© 2025 علاقه‌مندی‌های من | طراحی شده با ❤️ توسط من</p>
+    </div>
+  </footer>
+
+  <script src="cssstyle/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
